@@ -12,6 +12,7 @@ import ComponentA from "./Components/UseReducer/UseReducer+UseContext/ComponentA
 import ComponentC from "./Components/UseReducer/UseReducer+UseContext/ComponentC";
 import DataFetching from "./Components/FetchDataWithUseReducer/DataFetching";
 import DataFetchingTwo from "./Components/FetchDataWithUseReducer/DataFetchingTwo";
+import Parent from "./Components/UseCallback/Parent";
 
 // useContext Methods
 // ---------------------
@@ -51,8 +52,13 @@ function App() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <DataFetching />
-      <DataFetchingTwo />
+      <Parent />
+
+      {/* // DataFetching useing UseReducer And UseState //
+      -------------------------------------------- */}
+      {/* //   <DataFetching />
+    //   <DataFetchingTwo /> */}
+
 
       {/* UseContext + UseReducer  */}
       {/* // --------------------- */}
@@ -65,12 +71,12 @@ function App() {
         <ComponentC />
       </CounterContext.Provider> */}
 
+
       {/* UseReducer  */}
       {/* // --------------------- */}
       {/* <CounterOne />
       <CounterTwo />
       <CounterThree /> */}
-
       {/* useContext Components  */}
       {/* // --------------------- */}
       {/* <userContext.Provider value="MNZ">
