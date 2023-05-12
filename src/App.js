@@ -13,6 +13,7 @@ import ComponentC from "./Components/UseReducer/UseReducer+UseContext/ComponentC
 import DataFetching from "./Components/FetchDataWithUseReducer/DataFetching";
 import DataFetchingTwo from "./Components/FetchDataWithUseReducer/DataFetchingTwo";
 import Parent from "./Components/UseCallback/Parent";
+import Counter from "./Components/UseMemo/Counter";
 
 // useContext Methods
 // ---------------------
@@ -52,13 +53,17 @@ function App() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <Parent />
+      <Counter />
+
+      {/* 
+      UseCallback
+      -------------
+      <Parent /> */}
 
       {/* // DataFetching useing UseReducer And UseState //
       -------------------------------------------- */}
       {/* //   <DataFetching />
     //   <DataFetchingTwo /> */}
-
 
       {/* UseContext + UseReducer  */}
       {/* // --------------------- */}
@@ -70,7 +75,6 @@ function App() {
         <ComponentB />
         <ComponentC />
       </CounterContext.Provider> */}
-
 
       {/* UseReducer  */}
       {/* // --------------------- */}
