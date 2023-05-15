@@ -4,7 +4,7 @@ import UseEffectMouseMoveEvent from "./Components/useEffectMouseMoveEvent";
 import CounterUseEffect from "./Components/CounterUseEffect";
 // import ComponentA from "./Components/UseContext/ComponentA";
 import React, { useReducer } from "react";
-import CounterOne from "./Components/UseReducer/CounterOne";
+// import CounterOne from "./Components/UseReducer/CounterOne";
 import CounterTwo from "./Components/UseReducer/CounterTwo";
 import CounterThree from "./Components/UseReducer/CounterThree";
 import ComponentB from "./Components/UseReducer/UseReducer+UseContext/ComponentB";
@@ -17,6 +17,11 @@ import Counter from "./Components/UseMemo/Counter";
 import FocusInput from "./Components/UseRef/FocusInput";
 import ClassTimer from "./Components/UseRef/ClassTimer";
 import HookTimer from "./Components/UseRef/HookTimer";
+import DocTitleOne from "./Components/CustomHook/DocTitleOne";
+import DocTitleTwo from "./Components/CustomHook/DocTitleTwo";
+import CounterOne from "./Components/CustomHook/CounterOne";
+import UserForm from "./Components/CustomHook/UserForm";
+import UserFormTwo from "./Components/CustomHook/UserFormTwo";
 
 // useContext Methods
 // ---------------------
@@ -56,27 +61,31 @@ function App() {
 
   return (
     <div style={{ textAlign: "center" }}>
+
+      <DocTitleOne />
+      <DocTitleTwo />
+
+    <CounterOne />
+    <UserForm />
+    <UserFormTwo />
+      {/* UseRef
+      --------------
       <FocusInput />
-
       <ClassTimer />
+      <HookTimer /> */}
 
-      <HookTimer />
-    
 
       {/* Use Memo 
       ---------------
       <Counter /> */}
-
       {/* 
       UseCallback
       -------------
       <Parent /> */}
-
       {/* // DataFetching useing UseReducer And UseState //
       -------------------------------------------- */}
       {/* //   <DataFetching />
     //   <DataFetchingTwo /> */}
-
       {/* UseContext + UseReducer  */}
       {/* // --------------------- */}
       {/* <CounterContext.Provider
@@ -87,7 +96,6 @@ function App() {
         <ComponentB />
         <ComponentC />
       </CounterContext.Provider> */}
-
       {/* UseReducer  */}
       {/* // --------------------- */}
       {/* <CounterOne />
