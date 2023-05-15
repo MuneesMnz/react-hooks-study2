@@ -14,6 +14,9 @@ import DataFetching from "./Components/FetchDataWithUseReducer/DataFetching";
 import DataFetchingTwo from "./Components/FetchDataWithUseReducer/DataFetchingTwo";
 import Parent from "./Components/UseCallback/Parent";
 import Counter from "./Components/UseMemo/Counter";
+import FocusInput from "./Components/UseRef/FocusInput";
+import ClassTimer from "./Components/UseRef/ClassTimer";
+import HookTimer from "./Components/UseRef/HookTimer";
 
 // useContext Methods
 // ---------------------
@@ -53,7 +56,16 @@ function App() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <Counter />
+      <FocusInput />
+
+      <ClassTimer />
+
+      <HookTimer />
+    
+
+      {/* Use Memo 
+      ---------------
+      <Counter /> */}
 
       {/* 
       UseCallback
